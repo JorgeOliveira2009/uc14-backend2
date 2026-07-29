@@ -15,17 +15,9 @@ export const AppDataSource = new DataSource({
   password: DB_PASSWORD,
   database: DB_DATABASE,
   entities: [User],
-  synchronize: true,
-  logging: true,
+  synchronize: false,
+  logging: false,
   ssl: {
     rejectUnauthorized: false
   }
 });
-
-AppDataSource.initialize()
-  .then(() => {
-    console.log('Banco de dados conectado com sucesso');
-  })
-  .catch((error) => {
-    console.error(error);
-  });
