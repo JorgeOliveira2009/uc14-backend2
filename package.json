@@ -10,7 +10,7 @@
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:generate": "npm run typeorm -- migration:generate src/migrations/Migration -d src/config/dataSource.ts",
     "migration:run": "npm run typeorm -- migration:run -d src/config/dataSource.ts",
-    "migration:revert": "npm run typeorm -- migration:revert -d src/config/dataSource.ts"    
+    "migration:revert": "npm run typeorm -- migration:revert -d src/config/dataSource.ts"
   },
   "keywords": [],
   "type": "commonjs",
@@ -23,7 +23,7 @@
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.23.1",
     "reflect-metadata": "^0.2.2",
-    "typeorm": "^1.1.0",
+    "typeorm": "^0.3.31",
     "zod": "^4.4.3"
   },
   "devDependencies": {
